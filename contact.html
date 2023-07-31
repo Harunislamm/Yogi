@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact Us</title>
+</head>
+<body>
+<!-- Navbar-->
+<nav class="navbar">
+  <div class="brand-title">
+      <img class="yogi" src="YOGI Logo.svg" alt="">
+  </div>
+  <a href="#" class="toggle-button">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </a>
+  <div class="navbar-links">
+    <ul>
+      <li class="home"><a href="home.html">Home</a></li>
+      <li class="about-us"><a href="aboutus.html">About Us</a></li>
+      <li class="gallery"><a href="gallery.html">Gallery</a></li>
+      <li class="contact"><a href="contact.html">Contact</a></li>
+      <a class="Contact_Us" href="contact.html">
+          <img class="Contact-us-img"src="Vector.svg" alt="">
+         <span class="Contact-us-text">Contact Us</span>
+        </a>
+    </ul>
+    
+  </div>
+</nav>
+<section class="about-us">
+  <div class="img1">
+  <div class="information">
+      <h1 class="h1-information">Contact Us</h1>
+      <h3 class="h3-information">Get in touch with us!</h6>
+  </div>
+</div>
+</section>
+<section class="get-in-touch-head">
+  <div class="meet">
+  <h2 class="h2-getintouch">Let’s talk!</h2>
+  <h3 class="h3-getintouch">Send us a message and we’ll get back to you in a minute.</h3>
+</div>
+<div class="get-in-touch">
+  <div class="form-container">
+      <form>
+        <div class="form-field row">
+          <div class="field">
+            <label class="l1-field" for="name">*Name:</label>
+            <input class="i1-field" type="text" id="name" name="name" required>
+          </div>
+          <div class="field">
+            <label class="l2-field" for="surname">*Surname:</label>
+            <input class="i2-field"  type="text" id="surname" name="surname" required>
+          </div>
+        </div>
+        
+        <div class="form-field">
+          <label class="l3-field" for="email">*Email:</label>
+          <input class="i3-field" type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-field">
+          <label class="l4-field"  for="message">Your Message:</label>
+          <textarea class="t4-field" id="message" name="message" cols="70" rows="20" required></textarea>
+        </div>
+        
+        <div class="form-fields">
+          <input  class="change-color i4-field"  type="submit" value="Send">
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<section class="footer-container">
+    <div class="heading">
+    <div class="logo2">
+     <img class="img1-foot"  src="Group 55.svg" alt="">
+     <a class="con" href="contact.html" > 
+      <img class="footer-img" src="Vector.svg" alt="">
+      <span class="footer-text">Contact Us
+  </span>
+</a>
+    </div>
+    <div class="info">
+        <ul>
+            <a href="home.html"><li class="li1-footer">Home</li></a>
+            <a href="aboutus.html"><li class="li2-footer">About Us</li></a>
+            <a href="gallery.html"><li class="li3-footer">Gallery</li></a>
+            <a href="contact.html"><li class="li4-footer">Contact Us</li></a>
+
+        </ul>
+    </div>
+    <div class="adress">
+        <h4 class="h4-footer1">Working Hours</h4>
+        <h5 class="h5-footer1">Monday - Friday </h5>
+        <h5 class="h5-footer2">08:00 - 12:00 & 13.00 - 17.00</h5>
+
+            <h4 class="h4-footer2">Address</h4>
+            <h5 class="h5-footer3">1234 Main Street, Anytown</h5>
+
+    </div>
+
+</div>
+
+<hr class="hr-footer">
+<h5 class="h5-footer4">© Copyright 2023 | All Rights Reserved | Powered by EAGLE IT Solutions</h5>
+</section>
+
+<script>
+  const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+navbarLinks.classList.toggle('active')
+})
+</script>
+</body>
+</html>
